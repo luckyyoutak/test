@@ -17,10 +17,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/inobounce/0.2.0/inobounce.min.js"></script>
-<script>
-  inobounce.enable();
-</script>
+
   </head>
   <body>
     <header>
@@ -190,7 +187,9 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
           }
-
+document.addEventListener('scroll', function(event) {
+  window.scrollTo(0, 0);
+}, { passive: false });
         </script>
   </body>
 </html>
